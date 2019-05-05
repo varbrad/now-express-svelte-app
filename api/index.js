@@ -5,6 +5,7 @@ const app = express()
 
 const api = express.Router()
 
+// Apply middlewares & routes
 applyMiddleware(api)
 applyRoutes(api)
 

@@ -27,5 +27,8 @@
   ],
   "github": {
     "silent": true
+  },
+  "env": {
+    "test": "123"
   }
 }
