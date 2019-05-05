@@ -1,0 +1,14 @@
+{
+  "name": "now-express-svelte-app",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/varbrad/now-express-svelte-app.git",
+  "author": "Brad Davies <varbrad@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0"
+  }
+}
