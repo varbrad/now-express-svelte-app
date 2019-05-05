@@ -29,6 +29,6 @@
     "silent": true
   },
   "env": {
-    "test": "123"
+    "TEST": "@test-secret"
   }
 }
