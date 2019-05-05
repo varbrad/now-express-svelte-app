@@ -5,6 +5,10 @@
   "repository": "https://github.com/varbrad/now-express-svelte-app.git",
   "author": "Brad Davies <varbrad@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "dev:api": "nodemon api/server.js",
+    "lint": "eslint api"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
