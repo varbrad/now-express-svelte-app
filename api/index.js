@@ -1,7 +1,9 @@
+require('dotenv').config({ path: '../.env' })
+
 const express = require('express')
 
 const app = express()
 
-app.get('*', (req, res) => res.status(200).json({ ok: true }))
+app.get('*', (req, res) => res.status(200).json({ ok: true, env: process.env }))
 
 module.exports = app
