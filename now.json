@@ -29,6 +29,9 @@
     "silent": true
   },
   "env": {
-    "TEST": "@test-secret"
+    "ATLAS_USERNAME": "@atlas-username",
+    "ATLAS_PASSWORD": "@atlas-password",
+    "ATLAS_HOST": "@atlas-host",
+    "ATLAS_DATABASE": "@atlas-database"
   }
 }
