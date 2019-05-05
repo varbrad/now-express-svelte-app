@@ -187,6 +187,11 @@ eslint-plugin-prettier@^3.0.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
+eslint-plugin-svelte3@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte3/-/eslint-plugin-svelte3-1.1.0.tgz#8ea6e0b2598be04e4cfcdb26b4601c49114e2cf4"
+  integrity sha512-KBZEQPXZrWGrR8uq4frTKJSXdAIWT0pOyHHoo14XcpP+O1g2QdeuewStPGNNcgXgiEqltWrJID4et+N69wuL9g==
+
 eslint-scope@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-4.0.3.tgz#ca03833310f6889a3264781aa82e63eb9cfe7848"

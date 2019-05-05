@@ -5,5 +5,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "recursive-readdir": "^2.2.2"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
   }
 }
