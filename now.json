@@ -11,7 +11,7 @@
       "src": "app/package.json",
       "use": "@now/static-build",
       "config": {
-        "distDir": "app/public"
+        "distDir": "public"
       }
     }
   ],
