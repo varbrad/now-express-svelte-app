@@ -1,6 +1,4 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "rollup": "^1.10.1",
@@ -14,6 +12,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "now-build": "yarn build",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
