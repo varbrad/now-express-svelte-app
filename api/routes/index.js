@@ -3,7 +3,7 @@ const NotFoundError = require('../errors/NotFoundError')
 /**
  * Routes
  */
-const routes = [require('./db'), require('./errors'), require('./user')]
+const routes = [require('./errors'), require('./user')]
 
 module.exports = api => {
   // Trigger our routes
