@@ -22,7 +22,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "app/$1"
+      "dest": "public/$1"
     }
   ],
   "github": {
