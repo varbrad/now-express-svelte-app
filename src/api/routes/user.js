@@ -1,6 +1,6 @@
 const database = require('../middleware/database')
 const User = require('../db/models/User')
-const safe = require('../utils/catchAsync')
+const safe = require('../utils/safeAsync')
 
 module.exports = api => {
   api.get(

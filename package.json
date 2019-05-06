@@ -6,15 +6,28 @@
   "author": "Brad Davies <varbrad@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev:api": "nodemon api/server.js",
-    "dev:app": "cd app && yarn dev",
+    "start": "nodemon server.js",
+    "dev": "rollup -c -w",
+    "now-build": "rollup -c",
     "lint": "eslint api"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-svelte3": "^1.1.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "svelte": "^3.2.1"
   }
 }
