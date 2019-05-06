@@ -9,7 +9,7 @@
     "start": "nodemon server.js",
     "dev": "rollup -c -w",
     "now-build": "rollup -c",
-    "lint": "eslint api"
+    "lint": "eslint src"
   },
   "dependencies": {
     "dotenv": "^8.0.0",

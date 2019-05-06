@@ -10,6 +10,7 @@ const apiRouter = express.Router()
 const postApiMiddleware = apiMiddleware(apiRouter)
 
 // Define our routes
+require('./routes/auth')(apiRouter)
 require('./routes/user')(apiRouter)
 
 // Fallback route for non-existent API routes
