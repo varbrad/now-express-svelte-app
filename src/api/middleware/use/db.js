@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const connect = require('../../db/index')
+const connect = require('../../db/connect')
 const DatabaseError = require('../../errors/DatabaseError')
 
 module.exports = async (req, res, next) => {
