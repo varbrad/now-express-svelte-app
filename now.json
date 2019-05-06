@@ -32,6 +32,7 @@
     "ATLAS_USERNAME": "@atlas-username",
     "ATLAS_PASSWORD": "@atlas-password",
     "ATLAS_HOST": "@atlas-host",
-    "ATLAS_DATABASE": "@atlas-database"
+    "ATLAS_DATABASE": "@atlas-database",
+    "HASH_KEY": "@hash-key"
   }
 }

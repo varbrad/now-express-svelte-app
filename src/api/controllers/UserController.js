@@ -10,4 +10,13 @@ module.exports = {
       res.api(users)
     }),
   ],
+  store: [
+    useDatabase,
+    safe(async (req, res) => {
+      const { username, password } = req.body
+      const newUser = new User({ username, password })
+      await newUser.save()
+      res.api(newUser)
+    }),
+  ],
 }

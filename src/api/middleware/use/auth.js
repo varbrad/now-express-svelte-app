@@ -11,11 +11,13 @@ module.exports = (req, res, next) => {
   try {
     // Get the authorization header
     const header = req.get('Authorization')
-    if (!header) throw new UnauthorizedError('No Authorization header')
+    if (!header) throw new UnauthorizedError()
     // Get the access token from the header
     const accessToken = getAccessToken(header)
     if (!accessToken)
-      throw new UnauthorizedError('Invalid Authorization header')
+      throw new UnauthorizedError(
+        'The authorization header is malformed or invalid.'
+      )
     // Validate the access token is legitimate
     // TODO: Validate accessToken
     // TODO: Ensure the access token is in date
