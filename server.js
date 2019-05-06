@@ -1,6 +1,6 @@
 // Get ENV variables from .env file for local dev
 const path = require('path')
-require('dotenv').config({ path: path.join(__dirname, '..', '.env') })
+require('dotenv').config()
 
 // Get our express app
 const express = require('express')

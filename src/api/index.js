@@ -1,26 +1,21 @@
 const express = require('express')
-const applyMiddleware = require('./middleware/')
-const applyRoutes = require('./routes/')
+const appMiddleware = require('./middleware/app')
+const apiRouter = require('./api')
 const app = express()
 
-const api = express.Router()
+/**
+ * Apply our app-level middleware
+ */
+const postAppMiddleware = appMiddleware(app)
 
-// Apply middlewares & routes
-applyMiddleware(api)
-applyRoutes(api)
+/**
+ * Apply our child routers
+ */
+app.use('/api', apiRouter)
 
-app.use('/api', api)
-
-app.use((err, req, res, next) => {
-  if (err) {
-    if (typeof err.respond === 'function') {
-      err.respond(req, res)
-    } else {
-      res.error(500, 'An internal server error occured')
-    }
-  } else {
-    next()
-  }
-})
+/**
+ * Apply any post-route app-level middleware
+ */
+postAppMiddleware()
 
 module.exports = app

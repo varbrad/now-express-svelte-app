@@ -1,14 +1,14 @@
-const database = require('../middleware/database')
+const useDatabase = require('../middleware/use/db')
 const User = require('../db/models/User')
 const safe = require('../utils/safeAsync')
 
 module.exports = api => {
   api.get(
     '/user',
-    database,
+    useDatabase,
     safe(async (req, res) => {
       const users = await User.find()
-      res.done(users)
+      res.api(users)
     })
   )
 }

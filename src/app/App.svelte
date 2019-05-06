@@ -1,5 +1,5 @@
 <script>
-  export let name;
+  let name = 'Blobby'
 </script>
 
 <style>
@@ -8,4 +8,5 @@
 	}
 </style>
 
-<h1>Hello Mr. {name}, this is a test!!</h1>
+<h1>Hello there Mr. {name}, how are you today?</h1>
+<input type='text' bind:value={name} />
